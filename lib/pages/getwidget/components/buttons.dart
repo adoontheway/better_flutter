@@ -130,6 +130,30 @@ class ButtonsPage extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(
+              child: const Text('Social button'),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                GFButton(
+                  onPressed: () {},
+                  text: "primary",
+                  icon: Icon(Icons.facebook),
+                ),
+                GFButton(
+                  onPressed: null,
+                  text: "primary",
+                  icon: Icon(Icons.facebook),
+                ),
+                GFButton(
+                  onPressed: () {},
+                  text: "primary",
+                  icon: Icon(Icons.facebook),
+                  type: GFButtonType.outline,
+                ),
+              ],
+            ),
           ],
         ),
       ),

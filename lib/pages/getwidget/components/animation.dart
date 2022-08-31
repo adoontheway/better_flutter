@@ -120,6 +120,15 @@ class _AnimationPageState extends State<AnimationPage>
                 height: 80,
               ),
             ),
+            SizedBox(
+              height: 50,
+            ),
+            GFShimmer(
+              child: Text(
+                "Touch Image to Start Animation",
+                style: TextStyle(fontSize: 40),
+              ),
+            ),
           ],
         ),
       ),

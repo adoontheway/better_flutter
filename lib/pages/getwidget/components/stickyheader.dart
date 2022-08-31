@@ -25,20 +25,18 @@ class _SticktHeaderPageState extends State<SticktHeaderPage> {
           itemCount: imageList.length,
           itemBuilder: (context, index) => GFStickyHeader(
             stickyContent: Container(
-              child: Container(
-                alignment: AlignmentDirectional.center,
-                height: 50,
-                width: MediaQuery.of(context).size.width,
-                color: Color(0xFF42335d),
-                padding: EdgeInsets.symmetric(horizontal: 16.0),
-                child: Row(
-                  children: [
-                    Text(
-                      'Contact Group $index',
-                      style: const TextStyle(color: Colors.white),
-                    ),
-                  ],
-                ),
+              alignment: AlignmentDirectional.center,
+              height: 50,
+              width: MediaQuery.of(context).size.width,
+              color: Color(0xFF42335d),
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
+              child: Row(
+                children: [
+                  Text(
+                    'Contact Group $index',
+                    style: const TextStyle(color: Colors.white),
+                  ),
+                ],
               ),
             ),
             content: Container(
@@ -56,7 +54,8 @@ class _SticktHeaderPageState extends State<SticktHeaderPage> {
                             titleText: 'Eva Mendez',
                             subTitleText: 'Hello',
                             avatar: GFAvatar(
-                              backgroundImage: AssetImage(imageList[index]),
+                              backgroundImage:
+                                  AssetImage('assets/images/carousel01.jpeg'),
                             ),
                             size: 25,
                             activeBgColor: Colors.green,
