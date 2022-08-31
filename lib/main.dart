@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getwidget_test/common/index.dart';
 import 'package:getwidget_test/routes/app_pages.dart';
 import 'package:getwidget_test/theme/app_theme.dart';
 
@@ -15,11 +16,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      // enableLog: true,
+      enableLog: true,
       title: 'Flutter Widgets',
-      theme: AppTheme.dark,
+      theme: AppTheme.light,
       getPages: AppPage.routes,
       initialRoute: AppPage.INITIAL,
+      locale: LocaleService.locale,
+      fallbackLocale: LocaleService.fallbackLoacale,
+      translations: LocaleService(),
     );
   }
 }

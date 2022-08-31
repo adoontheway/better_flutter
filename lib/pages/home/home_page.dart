@@ -46,17 +46,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
       onSubmitted: ((value) {
         print("searchbar submit: $value");
       }),
-      title: Text("Flutter Best Practice"),
-      // actions: <Widget>[
-      //   GFIconButton(
-      //     icon: Icon(
-      //       Icons.favorite,
-      //       color: Colors.white,
-      //     ),
-      //     onPressed: () {},
-      //     type: GFButtonType.transparent,
-      //   ),
-      // ],
+      title: Text("app_name".tr),
     );
   }
 }

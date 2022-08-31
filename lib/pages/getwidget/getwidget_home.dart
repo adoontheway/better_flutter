@@ -42,11 +42,6 @@ class _GetWidgetHomePageState extends State<GetWidgetHome>
   }
 
   Widget _buildTile(RouteSetting setting) {
-    // return ListTile(
-    //   title: Text(setting.title),
-    //   subtitle: Text(setting.description),
-    //   onTap: () => Get.toNamed(setting.routePath),
-    // );
     return GFListTile(
       title: Text(setting.title),
       description: Text(setting.description),
@@ -56,29 +51,7 @@ class _GetWidgetHomePageState extends State<GetWidgetHome>
 
   GFAppBar _buildNormalAppbar() {
     return GFAppBar(
-      // searchBar: true,
-      // onSubmitted: ((value) {
-      //   print("searchbar submit: $value");
-      // }),
-      // leading: GFIconButton(
-      //   icon: Icon(
-      //     Icons.arrow_back,
-      //     color: Colors.white,
-      //   ),
-      //   onPressed: () {},
-      //   type: GFButtonType.transparent,
-      // ),
-      title: Text("GF Appbar"),
-      // actions: <Widget>[
-      //   GFIconButton(
-      //     icon: Icon(
-      //       Icons.favorite,
-      //       color: Colors.white,
-      //     ),
-      //     onPressed: () {},
-      //     type: GFButtonType.transparent,
-      //   ),
-      // ],
+      title: Text("GetWidget"),
     );
   }
 }

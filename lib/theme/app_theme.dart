@@ -6,5 +6,5 @@ class AppTheme {
       ThemeData.dark().copyWith(colorScheme: darkColorScheme);
 
   static final ThemeData light =
-      ThemeData.dark().copyWith(colorScheme: lightColorScheme);
+      ThemeData.light().copyWith(colorScheme: lightColorScheme);
 }

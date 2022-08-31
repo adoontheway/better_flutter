@@ -2,225 +2,423 @@ import 'package:get/get.dart';
 import 'package:getwidget_test/common/index.dart';
 import 'package:getwidget_test/pages/getwidget/index.dart';
 import 'package:getwidget_test/routes/app_pages.dart';
+import 'package:getwidget_test/utils/index.dart';
 
 class GetWidgetPages {
   static final List<GetPage> getWidgetRoutes = [
-    GetPage(name: GetWidgetRoutes.GET_BUTTON, page: () => ButtonsPage()),
-    GetPage(name: GetWidgetRoutes.GET_BADGE, page: () => BadgePage()),
-    GetPage(name: GetWidgetRoutes.GET_AVATAR, page: () => AvatarPage()),
-    GetPage(name: GetWidgetRoutes.GET_IMAGE, page: () => ImagePage()),
-    GetPage(name: GetWidgetRoutes.GET_CARD, page: () => CardPage()),
-    GetPage(name: GetWidgetRoutes.GET_CAROUSEL, page: () => CarouselPage()),
-    GetPage(name: GetWidgetRoutes.GET_TILE, page: () => TilePage()),
-    GetPage(name: GetWidgetRoutes.GET_TAB, page: () => TabPage()),
     GetPage(
-        name: GetWidgetRoutes.GET_FLOATING_WIDGET,
-        page: () => FloatingWidgetPage()),
-    GetPage(name: GetWidgetRoutes.GET_TOAST, page: () => ToastPage()),
-    GetPage(name: GetWidgetRoutes.GET_TOGGLE, page: () => TogglePage()),
-    GetPage(name: GetWidgetRoutes.GET_TYPOGRAPH, page: () => TypographyPage()),
-    GetPage(name: GetWidgetRoutes.GET_ACCORDION, page: () => AccordionPage()),
-    GetPage(name: GetWidgetRoutes.GET_ALERT, page: () => AlertPage()),
-    GetPage(name: GetWidgetRoutes.GET_SEARCHBAR, page: () => SearchBarPage()),
-    GetPage(name: GetWidgetRoutes.GET_RATING, page: () => RatingPage()),
-    GetPage(name: GetWidgetRoutes.GET_DROPDOWN, page: () => DropdownPage()),
-    GetPage(name: GetWidgetRoutes.GET_LOADER, page: () => LoaderPage()),
+      name: GetWidgetRoutes.GET_BUTTON,
+      page: GenerateGetPage(
+        ButtonsPage(),
+        'lib/pages/getwidget/components/buttons.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
     GetPage(
-        name: GetWidgetRoutes.GET_PROGRESSBAR, page: () => ProgressBarPage()),
-    GetPage(name: GetWidgetRoutes.GET_SHIMMER, page: () => ShimmerPage()),
-    GetPage(name: GetWidgetRoutes.GET_ANIMATION, page: () => AnimationPage()),
-    GetPage(name: GetWidgetRoutes.GET_BORDER, page: () => BorderPage()),
+      name: GetWidgetRoutes.GET_BADGE,
+      page: GenerateGetPage(
+        BadgePage(),
+        'lib/pages/getwidget/components/badge.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
     GetPage(
-        name: GetWidgetRoutes.GET_BOTTOMSHEET, page: () => BottomSheetPage()),
-    GetPage(name: GetWidgetRoutes.GET_CHECKBOX, page: () => CheckboxPage()),
+      name: GetWidgetRoutes.GET_AVATAR,
+      page: GenerateGetPage(
+        AvatarPage(),
+        'lib/pages/getwidget/components/avatar.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
     GetPage(
-        name: GetWidgetRoutes.GET_CHECKBOXLISTTILE,
-        page: () => CheckboxListTilePage()),
+      name: GetWidgetRoutes.GET_IMAGE,
+      page: GenerateGetPage(
+        ImagePage(),
+        'lib/pages/getwidget/components/image.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
     GetPage(
-        name: GetWidgetRoutes.GET_MULTISELECT, page: () => MultiSelectPage()),
-    GetPage(name: GetWidgetRoutes.GET_INTROSCREEN, page: () => IntroPage()),
-    GetPage(name: GetWidgetRoutes.GET_RADIO, page: () => RadioPage()),
+      name: GetWidgetRoutes.GET_CARD,
+      page: GenerateGetPage(
+        CardPage(),
+        'lib/pages/getwidget/components/card.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
     GetPage(
-        name: GetWidgetRoutes.GET_RADIOLISTTILE,
-        page: () => RadioListTilePage()),
+      name: GetWidgetRoutes.GET_CAROUSEL,
+      page: GenerateGetPage(
+        CarouselPage(),
+        'lib/pages/getwidget/components/carousel.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
     GetPage(
-        name: GetWidgetRoutes.GET_STICKYHEADER, page: () => SticktHeaderPage()),
-    GetPage(name: GetWidgetRoutes.GET_TEXTFIELD, page: () => TextfieldPage()),
-    GetPage(name: GetWidgetRoutes.GET_FORM, page: () => FormPage()),
-    GetPage(name: GetWidgetRoutes.GET_DRAWER, page: () => DrawerPage()),
-    GetPage(name: GetWidgetRoutes.GET_APPBAR, page: () => AppbarPage()),
+      name: GetWidgetRoutes.GET_TILE,
+      page: GenerateGetPage(
+        TilePage(),
+        'lib/pages/getwidget/components/tile.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_TAB,
+      page: GenerateGetPage(
+        TabPage(),
+        'lib/pages/getwidget/components/tab.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_FLOATING_WIDGET,
+      page: GenerateGetPage(
+        FloatingWidgetPage(),
+        'lib/pages/getwidget/components/floating_widget.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_TOAST,
+      page: GenerateGetPage(
+        ToastPage(),
+        'lib/pages/getwidget/components/toast.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_TOGGLE,
+      page: GenerateGetPage(
+        TogglePage(),
+        'lib/pages/getwidget/components/toggle.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_TYPOGRAPH,
+      page: GenerateGetPage(
+        TypographyPage(),
+        'lib/pages/getwidget/components/typography.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_ACCORDION,
+      page: GenerateGetPage(
+        AccordionPage(),
+        'lib/pages/getwidget/components/accordion.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_ALERT,
+      page: GenerateGetPage(
+        AlertPage(),
+        'lib/pages/getwidget/components/alert.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_SEARCHBAR,
+      page: GenerateGetPage(
+        SearchBarPage(),
+        'lib/pages/getwidget/components/searhbar.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_RATING,
+      page: GenerateGetPage(
+        RatingPage(),
+        'lib/pages/getwidget/components/rating.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_DROPDOWN,
+      page: GenerateGetPage(
+        DropdownPage(),
+        'lib/pages/getwidget/components/dropdown.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_LOADER,
+      page: GenerateGetPage(
+        LoaderPage(),
+        'lib/pages/getwidget/components/loader.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_PROGRESSBAR,
+      page: GenerateGetPage(
+        ProgressBarPage(),
+        'lib/pages/getwidget/components/progressbar.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_SHIMMER,
+      page: GenerateGetPage(
+        ShimmerPage(),
+        'lib/pages/getwidget/components/shimmer.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_ANIMATION,
+      page: GenerateGetPage(
+        AnimationPage(),
+        'lib/pages/getwidget/components/animation.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_BORDER,
+      page: GenerateGetPage(
+        BorderPage(),
+        'lib/pages/getwidget/components/border.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_BOTTOMSHEET,
+      page: GenerateGetPage(
+        BottomSheetPage(),
+        'lib/pages/getwidget/components/bottomsheet.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_CHECKBOX,
+      page: GenerateGetPage(
+        CheckboxPage(),
+        'lib/pages/getwidget/components/checkbox.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_CHECKBOXLISTTILE,
+      page: GenerateGetPage(
+        CheckboxListTilePage(),
+        'lib/pages/getwidget/components/checkboxlisttile.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_MULTISELECT,
+      page: GenerateGetPage(
+        MultiSelectPage(),
+        'lib/pages/getwidget/components/multiselect.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_INTROSCREEN,
+      page: GenerateGetPage(
+        IntroPage(),
+        'lib/pages/getwidget/components/intro.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_RADIO,
+      page: GenerateGetPage(
+        RadioPage(),
+        'lib/pages/getwidget/components/radio.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_RADIOLISTTILE,
+      page: GenerateGetPage(
+        RadioListTilePage(),
+        'lib/pages/getwidget/components/radiolisttile.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_STICKYHEADER,
+      page: GenerateGetPage(
+        SticktHeaderPage(),
+        'lib/pages/getwidget/components/stickyheader.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_TEXTFIELD,
+      page: GenerateGetPage(
+        TextfieldPage(),
+        'lib/pages/getwidget/components/textfield.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_FORM,
+      page: GenerateGetPage(
+        FormPage(),
+        'lib/pages/getwidget/components/form.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_DRAWER,
+      page: GenerateGetPage(
+        DrawerPage(),
+        'lib/pages/getwidget/components/drawer.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
+    GetPage(
+      name: GetWidgetRoutes.GET_APPBAR,
+      page: GenerateGetPage(
+        AppbarPage(),
+        'lib/pages/getwidget/components/appbar.dart',
+        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+      ),
+    ),
   ];
 
   static final List<RouteSetting> routeSettings = [
     RouteSetting(
-        title: "Buttons",
-        description:
-            "The GFButton is a Flutter Elevated button that has a solid background fill color and the button triggers whenever the action is passed into it",
+        title: "GetWidget.Buttons.title".tr,
+        description: "GetWidget.Buttons.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_BUTTON),
     RouteSetting(
-        title: "Badge",
-        description:
-            "GFBadges are the Flutter Badges that are used to alert notification in the active widget. It gives the number of active notifications that arose.",
+        title: "GetWidget.Badge.title".tr,
+        description: "GetWidget.Badge.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_BADGE),
     RouteSetting(
-        title: "Avatar",
-        description:
-            "GFAvatar is a Flutter Avatar which is an image basically used to display the user picture in the profile section. GFAvatar has different shapes wherein the popular is a Circular Avatar",
+        title: "GetWidget.Avatar.title".tr,
+        description: "GetWidget.Avatar.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_AVATAR),
     RouteSetting(
-        title: "Image",
-        description:
-            "Flutter Images are those that manage the asset images and show that upon run time. The images can be static images or dynamic images.",
+        title: "GetWidget.Image.title".tr,
+        description: "GetWidget.Image.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_IMAGE),
     RouteSetting(
-        title: "Card",
-        description:
-            "GFCard is a Flutter Card that is used in any section of the application to display certain types of information about the application. It can be simply used with a title and buttons",
+        title: "GetWidget.Card.title".tr,
+        description: "GetWidget.Card.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_CARD),
     RouteSetting(
-        title: "Carousel",
-        description:
-            "GFCarousel is a Flutter Carousel or Flutter Image Slider widget that has a set of images that slides one after the other in a linear manner repeatedly in a given interval of time. GFCarousel can have any number of items in a slide and it can also have multiple images in one single slide.",
+        title: "GetWidget.Carousel.title".tr,
+        description: "GetWidget.Carousel.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_CAROUSEL),
     RouteSetting(
-        title: "Tile",
-        description:
-            "GFListTile is a Flutter ListTile that is a widget used to populate a ListView in an application. It generally has a title, and one to three lines of description or subtitle, and a trailing icon. The ListTile background color can be changed using the color property.",
+        title: "GetWidget.Tile.title".tr,
+        description: "GetWidget.Tile.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_TILE),
     RouteSetting(
-        title: "Tab",
-        description:
-            "GF Flutter Tab is a combination of the Tabbar and TabBarView controlled by the tab controller. Whereas GFTabBar contains tab buttons that navigate to a particular tabBarView page in GFTabBarView.",
+        title: "GetWidget.Tab.title".tr,
+        description: "GetWidget.Tab.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_TAB),
     RouteSetting(
-        title: "FloatingWidget",
-        description:
-            "he GF Flutter Floating Widget is mostly and effectively used to show some popups, alerts, or some error messages which float over the main body. GF Floating Widget's child can take any kind of component or widgets as its parameter.",
+        title: "GetWidget.FloatingWidget.title".tr,
+        description: "GetWidget.FloatingWidget.desc".tr,
         routePath:
             AppRoute.GetWidgetHome + GetWidgetRoutes.GET_FLOATING_WIDGET),
     RouteSetting(
-        title: "Toast",
-        description:
-            "GFToast is a Flutter Toast Message that is used to show toast messages or errors in a given interval of time and it can have trailing widgets to display icons or buttons",
+        title: "GetWidget.Toast.title".tr,
+        description: "GetWidget.Toast.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_TOAST),
     RouteSetting(
-        title: "Toggle",
-        description:
-            "The Flutter toggle switch is ON/OFF switch or ON/OFF Button that allows the user to toggle the switch between ON or OFF states",
+        title: "GetWidget.Toggle.title".tr,
+        description: "GetWidget.Toggle.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_TOGGLE),
     RouteSetting(
-        title: "Typography",
-        description:
-            "Flutter Typography is the art of arranging letters according to the need in order to make a clean styling of texts and words.",
+        title: "GetWidget.Typography.title".tr,
+        description: "GetWidget.Typography.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_TYPOGRAPH),
     RouteSetting(
-        title: "Accordion",
-        description:
-            "Flutter Accordion is an expansion tile wherein the content or the body of the title will be hidden or collapsed and it will be expanded only when clicking the title of the expansion tile. The content can be of any widget and can have any number of lines. The dropdown arrow shows whether the tile is expanded or collapsed according to the need.",
+        title: "GetWidget.Accordion.title".tr,
+        description: "GetWidget.Accordion.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_ACCORDION),
     RouteSetting(
-        title: "Alert",
-        description:
-            "GFAlert is a Flutter Alert Dialog that shows upon clicking the relevant button that gives some kind of information or messages and it apparently has some action buttons. GF Flutter Alert Dialog should be wrapped inside the GFFloating Widget. The child of the GFFloatingWidget takes GFAlert as its argument and the body takes any kind of widgets.",
+        title: "GetWidget.Alert.title".tr,
+        description: "GetWidget.Alert.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_ALERT),
     RouteSetting(
-        title: "Appbar",
-        description:
-            "Flutter Appbar is an action button that is placed on the top of the screen and is a static one. It basically consists of a toolbar and other widgets that can also be used inside the Flutter Appbar.",
+        title: "GetWidget.Appbar.title".tr,
+        description: "GetWidget.Appbar.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_APPBAR),
     RouteSetting(
-        title: "Search Bar",
-        description:
-            "GFSearchBar is a flutter search bar wherein the user enters few letters in order to search the words from the list provided in the search section.GFSearchBar contains textfield for user input and the overlay container to show the search list collections.",
+        title: "GetWidget.Searchbar.title".tr,
+        description: "GetWidget.Searchbar.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_SEARCHBAR),
     RouteSetting(
-        title: "Rating Bar",
-        description:
-            "Flutter rating allows the user to start rating any of the products using the start icons as rating icons.",
+        title: "GetWidget.Ratingbar.title".tr,
+        description: "GetWidget.Ratingbar.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_RATING),
     RouteSetting(
-        title: "Dropdown",
-        description:
-            "GFDropdown is a Dropdown in Flutter Widget that lets users select from the number of items and display the selected item.",
+        title: "GetWidget.Dropdown.title".tr,
+        description: "GetWidget.Dropdown.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_DROPDOWN),
     RouteSetting(
-        title: "Loader",
-        description:
-            "GFLoader is a Flutter Loader circular indicator that will be loading continuously that indicates something is about to load.",
+        title: "GetWidget.Loader.title".tr,
+        description: "GetWidget.Loader.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_LOADER),
     RouteSetting(
-        title: "Progress Bar",
-        description:
-            "GFProgress Bar is a Flutter Progress bar or a Flutter Progress Button that tells the percentage of progress done in any given task or work.\nGFProgress bar can be of two types, a simple linear progress bar or a Circular Progress bar.",
+        title: "GetWidget.Progressbar.title".tr,
+        description: "GetWidget.Progressbar.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_PROGRESSBAR),
     RouteSetting(
-        title: "Shimmer",
-        description:
-            "GFShimmer is a Flutter Shimmer Effect Widget that can be used by giving Linear Gradient for more visual shimmer effect or just by adding Main Color and Secondary Color for basic shimmer effect.",
+        title: "GetWidget.Shimmer.title".tr,
+        description: "GetWidget.Shimmer.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_SHIMMER),
     RouteSetting(
-        title: "Animation",
-        description:
-            "GFAnimation is a Flutter Animation wherein it makes the UI smooth for the user and the user interaction with the app will be easier. GFAnimation makes it easy to implement a variety of animations.",
+        title: "GetWidget.Animation.title".tr,
+        description: "GetWidget.Animation.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_ANIMATION),
     RouteSetting(
-        title: "Border",
-        description:
-            "GF Flutter Border is a Flutter Border that has all four sides and it makes a thin line around any widget.\nGFBorder can be used as a solid border, dashed border, or dotted border for images, texts, or even buttons. ",
+        title: "GetWidget.Border.title".tr,
+        description: "GetWidget.Border.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_BORDER),
     RouteSetting(
-        title: "BottomSheet",
-        description:
-            "GFBottomSheet or Flutter bottom sheet allows the user to expand the content body to display more content. The property enableExpandableContenton truemakes the content body expandable.",
+        title: "GetWidget.BottomSheet.title".tr,
+        description: "GetWidget.BottomSheet.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_BOTTOMSHEET),
     RouteSetting(
-        title: "CheckBox",
-        description:
-            "GFCheckbox is a Flutter CheckBox widget that permits the user to select one or more than one option in a given set of lists. It can have any number of possible ticks. The user can check and uncheck on the boxes provided.",
+        title: "GetWidget.CheckBox.title".tr,
+        description: "GetWidget.CheckBox.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_CHECKBOX),
     RouteSetting(
-        title: "CheckBox List Tile",
-        description:
-            "FCheckBoxListTile is a Flutter CheckBoxList Tile that is a list of items wherein the user can check or uncheck the items in the list. It allows users to select one or more options inside the list. GFCheckBoxListTile can also be positioned right or left of the screen according to the need.",
+        title: "GetWidget.CheckBoxList.title".tr,
+        description: "GetWidget.CheckBoxList.desc".tr,
         routePath:
             AppRoute.GetWidgetHome + GetWidgetRoutes.GET_CHECKBOXLISTTILE),
     RouteSetting(
-        title: "Multi Select",
-        description:
-            "GFMultiselect features allow users to create a customized multi-select dropdown for the more flexible and interactive UI design.",
+        title: "GetWidget.Multiselect.title".tr,
+        description: "GetWidget.Multiselect.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_MULTISELECT),
     RouteSetting(
-        title: "Intro",
-        description:
-            "GFIntro Screen is a Flutter Introduction Screen that has sliders and gives information about the application. It can have as many slides as the application needs. It is a user-friendly widget that pops upon opening the application to give a brief introduction to the app.",
+        title: "GetWidget.Intro.title".tr,
+        description: "GetWidget.Intro.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_INTROSCREEN),
     RouteSetting(
-        title: "Radio",
-        description:
-            "Flutter RadioBox Button permits the user to select only one option in any two sets of mutual options as it is the flutter radio button default selected. The radio button has to be checked or unchecked only once in a given set of options.",
+        title: "GetWidget.Radio.title".tr,
+        description: "GetWidget.Radio.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_RADIO),
     RouteSetting(
-        title: "Radio List Tile",
-        description:
-            "Flutter RadioBoxListTile is a list of items wherein the user can check or uncheck only one item in the list. It allows users to select only one option inside the list. GFRadioBoxListTile can also be positioned right or left of the screen according to the need",
+        title: "GetWidget.RadioList.title".tr,
+        description: "GetWidget.RadioList.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_RADIOLISTTILE),
     RouteSetting(
-        title: "Sticky Header",
-        description:
-            "GFStickyHeader is a Flutter Sticky Header that will be fixed or sticks on the top of the screen like the header that has a scrollable container.",
+        title: "GetWidget.StickyHeader.title".tr,
+        description: "GetWidget.StickyHeader.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_STICKYHEADER),
     RouteSetting(
-        title: "TextField",
-        description: "GFTextField is a textfield where make inputs.",
+        title: "GetWidget.TextField.title".tr,
+        description: "GetWidget.TextField.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_TEXTFIELD),
     RouteSetting(
-        title: "Form",
-        description: "GfForm have a list of component as the form inputs.",
+        title: "GetWidget.Form.title".tr,
+        description: "GetWidget.Form.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_FORM),
     RouteSetting(
-        title: "Drawer",
-        description:
-            "GFDrawer is a Flutter Drawer widget that slides from the left side of the screen when clicked on the drawer button which will be seen on the left top side of the application. The drawer has mainly navigation options that navigate to the respective other pages depending upon the routes.",
+        title: "GetWidget.Drawer.title".tr,
+        description: "GetWidget.Drawer.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_DRAWER),
+    //todo add GFColor
   ];
 }
