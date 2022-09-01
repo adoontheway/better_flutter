@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
 
 class DrawerPage extends StatefulWidget {
@@ -23,7 +24,9 @@ class _DrawerPageState extends State<DrawerPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(_flag ? "Drawer with header" : "Normal Drawer"),
+              Text(_flag
+                  ? "GetWidget.BuildDrawerWithHeader".tr
+                  : "GetWidget.BuildNormalDrawer".tr),
               GFCheckbox(
                   onChanged: (val) {
                     _flag = val;

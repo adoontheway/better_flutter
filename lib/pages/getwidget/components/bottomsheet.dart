@@ -9,17 +9,12 @@ class BottomSheetPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Badge "),
+        title: const Text("BottomSheet"),
       ),
-      // bottomSheet: _buildNormalBottomSheet(),
       bottomSheet: _buildExpandeContentSheet(),
       body: Center(
         child: Column(
-          children: [
-            GFAvatar(
-              backgroundImage: AssetImage('assets/images/avatar.jpeg'),
-            ),
-          ],
+          children: [],
         ),
       ),
       floatingActionButton: _buildFloatingButton(),

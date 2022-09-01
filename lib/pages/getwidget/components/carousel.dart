@@ -15,32 +15,27 @@ class _CarouselPageState extends State<CarouselPage> {
   ];
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Card"),
-      ),
-      body: Center(
-        child: Card(
-          child: GFCarousel(
-            autoPlay: true,
-            items: localAssets.map(
-              (url) {
-                return Container(
-                  margin: EdgeInsets.all(8.0),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                    child: Image.asset(url, fit: BoxFit.cover, width: 1000),
-                    // Image.network(url, fit: BoxFit.cover, width: 1000.0),
-                  ),
-                );
-              },
-            ).toList(),
-            onPageChanged: (index) {
-              setState(() {
-                index;
-              });
+    return Center(
+      child: Card(
+        child: GFCarousel(
+          autoPlay: true,
+          items: localAssets.map(
+            (url) {
+              return Container(
+                margin: EdgeInsets.all(8.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(5.0)),
+                  child: Image.asset(url, fit: BoxFit.cover, width: 1000),
+                  // Image.network(url, fit: BoxFit.cover, width: 1000.0),
+                ),
+              );
             },
-          ),
+          ).toList(),
+          onPageChanged: (index) {
+            setState(() {
+              index;
+            });
+          },
         ),
       ),
     );

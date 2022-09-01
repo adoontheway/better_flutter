@@ -5,15 +5,14 @@ import 'package:getwidget_test/common/route_setting.dart';
 import 'package:getwidget_test/routes/app_pages.dart';
 import 'package:getwidget_test/routes/getwidget/getwidget_pages.dart';
 
-class GetWidgetHome extends StatefulWidget {
-  GetWidgetHome({Key? key}) : super(key: key);
+class GetXHome extends StatefulWidget {
+  GetXHome({Key? key}) : super(key: key);
 
   @override
-  State<GetWidgetHome> createState() => _GetWidgetHomePageState();
+  State<GetXHome> createState() => _GetXHomePageState();
 }
 
-class _GetWidgetHomePageState extends State<GetWidgetHome>
-    with TickerProviderStateMixin {
+class _GetXHomePageState extends State<GetXHome> with TickerProviderStateMixin {
   late TabController tabController;
 
   @override

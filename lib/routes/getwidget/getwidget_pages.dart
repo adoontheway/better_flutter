@@ -12,6 +12,7 @@ class GetWidgetPages {
         ButtonsPage(),
         'lib/pages/getwidget/components/buttons.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -20,15 +21,16 @@ class GetWidgetPages {
         BadgePage(),
         'lib/pages/getwidget/components/badge.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
       name: GetWidgetRoutes.GET_AVATAR,
       page: GenerateGetPage(
-        AvatarPage(),
-        'lib/pages/getwidget/components/avatar.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
-      ),
+          AvatarPage(),
+          'lib/pages/getwidget/components/avatar.dart',
+          'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+          ''),
     ),
     GetPage(
       name: GetWidgetRoutes.GET_IMAGE,
@@ -36,6 +38,7 @@ class GetWidgetPages {
         ImagePage(),
         'lib/pages/getwidget/components/image.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -44,6 +47,7 @@ class GetWidgetPages {
         CardPage(),
         'lib/pages/getwidget/components/card.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -52,6 +56,7 @@ class GetWidgetPages {
         CarouselPage(),
         'lib/pages/getwidget/components/carousel.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -60,6 +65,7 @@ class GetWidgetPages {
         TilePage(),
         'lib/pages/getwidget/components/tile.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -68,6 +74,7 @@ class GetWidgetPages {
         TabPage(),
         'lib/pages/getwidget/components/tab.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -76,6 +83,7 @@ class GetWidgetPages {
         FloatingWidgetPage(),
         'lib/pages/getwidget/components/floating_widget.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -84,6 +92,7 @@ class GetWidgetPages {
         ToastPage(),
         'lib/pages/getwidget/components/toast.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -92,6 +101,7 @@ class GetWidgetPages {
         TogglePage(),
         'lib/pages/getwidget/components/toggle.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -100,6 +110,7 @@ class GetWidgetPages {
         TypographyPage(),
         'lib/pages/getwidget/components/typography.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -108,6 +119,7 @@ class GetWidgetPages {
         AccordionPage(),
         'lib/pages/getwidget/components/accordion.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -116,6 +128,7 @@ class GetWidgetPages {
         AlertPage(),
         'lib/pages/getwidget/components/alert.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -124,6 +137,7 @@ class GetWidgetPages {
         SearchBarPage(),
         'lib/pages/getwidget/components/searhbar.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -132,6 +146,7 @@ class GetWidgetPages {
         RatingPage(),
         'lib/pages/getwidget/components/rating.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -140,6 +155,7 @@ class GetWidgetPages {
         DropdownPage(),
         'lib/pages/getwidget/components/dropdown.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -148,6 +164,7 @@ class GetWidgetPages {
         LoaderPage(),
         'lib/pages/getwidget/components/loader.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -156,6 +173,7 @@ class GetWidgetPages {
         ProgressBarPage(),
         'lib/pages/getwidget/components/progressbar.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -164,6 +182,7 @@ class GetWidgetPages {
         ShimmerPage(),
         'lib/pages/getwidget/components/shimmer.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -172,6 +191,7 @@ class GetWidgetPages {
         AnimationPage(),
         'lib/pages/getwidget/components/animation.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -180,6 +200,7 @@ class GetWidgetPages {
         BorderPage(),
         'lib/pages/getwidget/components/border.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -188,6 +209,7 @@ class GetWidgetPages {
         BottomSheetPage(),
         'lib/pages/getwidget/components/bottomsheet.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -196,6 +218,7 @@ class GetWidgetPages {
         CheckboxPage(),
         'lib/pages/getwidget/components/checkbox.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -204,6 +227,7 @@ class GetWidgetPages {
         CheckboxListTilePage(),
         'lib/pages/getwidget/components/checkboxlisttile.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -212,6 +236,7 @@ class GetWidgetPages {
         MultiSelectPage(),
         'lib/pages/getwidget/components/multiselect.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -220,6 +245,7 @@ class GetWidgetPages {
         IntroPage(),
         'lib/pages/getwidget/components/intro.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -228,6 +254,7 @@ class GetWidgetPages {
         RadioPage(),
         'lib/pages/getwidget/components/radio.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -236,6 +263,7 @@ class GetWidgetPages {
         RadioListTilePage(),
         'lib/pages/getwidget/components/radiolisttile.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -244,6 +272,7 @@ class GetWidgetPages {
         SticktHeaderPage(),
         'lib/pages/getwidget/components/stickyheader.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -252,6 +281,7 @@ class GetWidgetPages {
         TextfieldPage(),
         'lib/pages/getwidget/components/textfield.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -260,6 +290,7 @@ class GetWidgetPages {
         FormPage(),
         'lib/pages/getwidget/components/form.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -268,6 +299,7 @@ class GetWidgetPages {
         DrawerPage(),
         'lib/pages/getwidget/components/drawer.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
     GetPage(
@@ -276,6 +308,7 @@ class GetWidgetPages {
         AppbarPage(),
         'lib/pages/getwidget/components/appbar.dart',
         'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'GetWidget',
       ),
     ),
   ];
@@ -347,8 +380,8 @@ class GetWidgetPages {
         description: "GetWidget.Searchbar.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_SEARCHBAR),
     RouteSetting(
-        title: "GetWidget.Ratingbar.title".tr,
-        description: "GetWidget.Ratingbar.desc".tr,
+        title: "GetWidget.Rating.title".tr,
+        description: "GetWidget.Rating.desc".tr,
         routePath: AppRoute.GetWidgetHome + GetWidgetRoutes.GET_RATING),
     RouteSetting(
         title: "GetWidget.Dropdown.title".tr,

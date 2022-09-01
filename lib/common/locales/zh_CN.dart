@@ -41,8 +41,7 @@ const Map<String, String> zh_CN = {
   'GetWidget.Avatar.desc': 'GFAvatar用于在个人资料部分展示用户照片，GFAvatar有不同的形状，最流行的还是圆形的。',
   'GetWidget.Image.desc': '图片组件用来基于运行时管理和展示图片资源，图片可以是静态的，也可以是动态的。',
   'GetWidget.Card.desc': 'GFCard用于展示任意信息，可以用在应用的任何地方。',
-  'GetWidget.Carousel.desc':
-      'GFCarousel是一个旋转木马或者说Flutter图片轮播组件，他对一系列的图片以给定的时间进行线性轮播。',
+  'GetWidget.Carousel.desc': 'GFCarousel是图片轮播组件。',
   'GetWidget.Tile.desc':
       'GFListTile是一个用于制作ListView 的组件。基本上是由一个标题，3行描述或者副标题，和一个尾部图标组成。ListTile的背景色可以通过 color 属性来指定。',
   'GetWidget.Tab.desc':
@@ -69,25 +68,25 @@ const Map<String, String> zh_CN = {
   'GetWidget.Animation.desc':
       'GFAnimation 让UI更平滑，这样用户与 app 交互更简单。 GFAnimation 让大量的动画实现起来更简单。',
   'GetWidget.Border.desc':
-      'GF Flutter Border is a Flutter Border that has all four sides and it makes a thin line around any widget.\nGFBorder can be used as a solid border, dashed border, or dotted border for images, texts, or even buttons.',
+      'Border 有四条边，他为组件制作围绕的细线边界。GFBorder 可以为图片，文本甚至按钮制作实线边，虚线边，点线边。',
   'GetWidget.BottomSheet.desc':
-      'GFBottomSheet or Flutter bottom sheet allows the user to expand the content body to display more content. The property enableExpandableContenton truemakes the content body expandable.',
+      'GFBottomSheet 允许用户展开本体来显示更多的内容。 enableExpandableContenton 属性可以让内容本体可以展开。',
   'GetWidget.CheckBox.desc':
-      'GFCheckbox is a Flutter CheckBox widget that permits the user to select one or more than one option in a given set of lists. It can have any number of possible ticks. The user can check and uncheck on the boxes provided.',
+      'GFCheckbox 让用户指定的列表中选择一个或者多个选项。他可以有任意数量的选择，用户可以在提供的方框上进行选中和取消选中的操作。',
   'GetWidget.CheckBoxList.desc':
-      'GFCheckBoxListTile is a Flutter CheckBoxList Tile that is a list of items wherein the user can check or uncheck the items in the list. It allows users to select one or more options inside the list. GFCheckBoxListTile can also be positioned right or left of the screen according to the need.',
-  'GetWidget.Multiselect.desc':
-      'GFMultiselect features allow users to create a customized multi-select dropdown for the more flexible and interactive UI design.',
+      'GFCheckBoxListTile 是一系列用户可以进行选择的Checkbox列表。他允许用户在列表进行单个或者多个选择。GFCheckBoxListTile 也可以根据需求放在屏幕的左边或者右边。',
+  'GetWidget.Multiselect.desc': 'GFMultiselect 允许用户为了更灵活和交互更强的UI创建自定义的多选下拉列表。',
   'GetWidget.Intro.desc':
-      'GFIntro Screen is a Flutter Introduction Screen that has sliders and gives information about the application. It can have as many slides as the application needs. It is a user-friendly widget that pops upon opening the application to give a brief introduction to the app.',
+      'GFIntro Screen 是一个介绍页面，有滑动组件和给定的应用信息。他可以根据应用需要有多个滑动组件。 在打开应用的时候弹出此组件用于应用的简单介绍是非常友好的。',
   'GetWidget.Radio.desc':
-      'Flutter RadioBox Button permits the user to select only one option in any two sets of mutual options as it is the flutter radio button default selected. The radio button has to be checked or unchecked only once in a given set of options.',
+      'Flutter RadioBox Button 让用户在任何2个系列中选择一个选项， 单组中只能同时选中一个选项。',
   'GetWidget.RadioList.desc':
-      'Flutter RadioBoxListTile is a list of items wherein the user can check or uncheck only one item in the list. It allows users to select only one option inside the list. GFRadioBoxListTile can also be positioned right or left of the screen according to the need.',
+      'Flutter RadioBoxListTile 是一系列的选择，用户只能对其中一个选项进行选择或者取消选择操作。 GFRadioBoxListTile 也可以根据需求摆放到屏幕的左边或者右边。',
   'GetWidget.StickyHeader.desc':
-      'GFStickyHeader is a Flutter Sticky Header that will be fixed or sticks on the top of the screen like the header that has a scrollable container.',
-  'GetWidget.TextField.desc': 'GFTextField is a textfield where make inputs.',
-  'GetWidget.Form.desc': 'GfForm have a list of component as the form inputs.',
-  'GetWidget.Drawer.desc':
-      'GFDrawer is a Flutter Drawer widget that slides from the left side of the screen when clicked on the drawer button which will be seen on the left top side of the application. The drawer has mainly navigation options that navigate to the respective other pages depending upon the routes.',
+      'GFStickyHeader 会固定或者粘在屏幕的顶部，就好似header有一个滚动容器一样。',
+  'GetWidget.TextField.desc': 'GFTextField 是一个强大的输入框，有各种形状可供选择。',
+  'GetWidget.Form.desc': 'GfForm 是一个表单组件，formfields 属性可以接受一系列的表单作为内容传入。',
+  'GetWidget.Drawer.desc': 'GFDrawer 是抽屉效果，当点击应用左上角的抽屉按钮的时候会从屏幕的左边滑入。 ',
+  "GetWidget.BuildDrawerWithHeader": '带头像的Drawer',
+  "GetWidget.BuildNormalDrawer": '普通的Drawer',
 };

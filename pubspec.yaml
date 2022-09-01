@@ -16,6 +16,7 @@ dependencies:
   getwidget: ^3.0.1
   get: ^4.6.5
   widget_with_codeview: ^2.0.1+2
+  logger: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -28,13 +29,12 @@ flutter:
   uses-material-design: true
 
   assets:
+    - lib/pages/getwidget/components/
     - assets/images/avatar.jpeg
     - assets/images/carousel01.jpeg
     - assets/images/carousel02.jpeg
     - assets/images/carousel03.jpeg
-    - lib/pages/getwidget/components/buttons.dart
-    - lib/pages/getwidget/components/badge.dart
-    - lib/pages/
+    
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   # example:

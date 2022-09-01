@@ -1,6 +1,6 @@
-part of 'app_pages.dart';
+part of '../app_pages.dart';
 
-abstract class GetWidgetRoutes {
+abstract class GetXRoutes {
   static const GET_BUTTON = "/button";
   static const GET_BADGE = "/badge";
   static const GET_AVATAR = "/avatar";
