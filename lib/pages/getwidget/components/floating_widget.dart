@@ -6,24 +6,19 @@ class FloatingWidgetPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Floating Widget"),
-      ),
-      body: GFFloatingWidget(
-        child: GFIconBadge(
-            child: GFAvatar(
-              size: GFSize.LARGE,
-              backgroundImage: AssetImage('assets/images/avatar.jpeg'),
-            ),
-            counterChild: GFBadge(
-              text: '12',
-              shape: GFBadgeShape.circle,
-            )),
-        body: Text('body or any kind of widget here..'),
-        verticalPosition: MediaQuery.of(context).size.height * 0.2,
-        horizontalPosition: MediaQuery.of(context).size.width * 0.8,
-      ),
+    return GFFloatingWidget(
+      child: GFIconBadge(
+          child: GFAvatar(
+            size: GFSize.LARGE,
+            backgroundImage: AssetImage('assets/images/avatar.jpeg'),
+          ),
+          counterChild: GFBadge(
+            text: '12',
+            shape: GFBadgeShape.circle,
+          )),
+      body: Text('body or any kind of widget here..'),
+      verticalPosition: MediaQuery.of(context).size.height * 0.2,
+      horizontalPosition: MediaQuery.of(context).size.width * 0.8,
     );
   }
 }

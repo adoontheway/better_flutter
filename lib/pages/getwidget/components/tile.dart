@@ -6,29 +6,23 @@ class TilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Tile"),
-      ),
-      body: Center(
-        child: Column(
-          children: [
-            GFListTile(
-              titleText: 'BasicTile',
+    return Center(
+      child: Column(
+        children: [
+          GFListTile(
+            titleText: 'BasicTile',
+            subTitleText: 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+            icon: Icon(Icons.favorite),
+          ),
+          GFListTile(
+              avatar: GFAvatar(
+                backgroundImage: AssetImage('assets/images/avatar.jpeg'),
+              ),
+              titleText: 'Tile with avatar',
               subTitleText:
                   'Lorem ipsum dolor sit amet, consectetur adipiscing',
-              icon: Icon(Icons.favorite),
-            ),
-            GFListTile(
-                avatar: GFAvatar(
-                  backgroundImage: AssetImage('assets/images/avatar.jpeg'),
-                ),
-                titleText: 'Tile with avatar',
-                subTitleText:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing',
-                icon: Icon(Icons.favorite)),
-          ],
-        ),
+              icon: Icon(Icons.favorite)),
+        ],
       ),
     );
   }

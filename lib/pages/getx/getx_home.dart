@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
-import 'package:getwidget_test/common/route_setting.dart';
-import 'package:getwidget_test/routes/app_pages.dart';
-import 'package:getwidget_test/routes/getwidget/getwidget_pages.dart';
+import 'package:flutter_best_practice/common/route_setting.dart';
+import 'package:flutter_best_practice/routes/app_pages.dart';
+import 'package:flutter_best_practice/routes/getwidget/getwidget_pages.dart';
 
 class GetXHome extends StatefulWidget {
   GetXHome({Key? key}) : super(key: key);

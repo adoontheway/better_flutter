@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_best_practice/routes/app_pages.dart';
 import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
-import 'package:getwidget_test/routes/app_pages.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key}) : super(key: key);

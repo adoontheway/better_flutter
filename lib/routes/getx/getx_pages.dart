@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
-import 'package:getwidget_test/common/index.dart';
-import 'package:getwidget_test/pages/getwidget/index.dart';
-import 'package:getwidget_test/routes/app_pages.dart';
-import 'package:getwidget_test/utils/index.dart';
+import 'package:flutter_best_practice/common/index.dart';
+import 'package:flutter_best_practice/pages/getwidget/index.dart';
+import 'package:flutter_best_practice/routes/app_pages.dart';
+import 'package:flutter_best_practice/utils/index.dart';
 
 class GetXPages {
   static final List<GetPage> getWidgetRoutes = [];

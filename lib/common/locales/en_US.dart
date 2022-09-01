@@ -104,4 +104,5 @@ const Map<String, String> en_US = {
       'GFDrawer is a Flutter Drawer widget that slides from the left side of the screen when clicked on the drawer button which will be seen on the left top side of the application. The drawer has mainly navigation options that navigate to the respective other pages depending upon the routes.',
   "GetWidget.BuildDrawerWithHeader": 'Drawer with Header',
   "GetWidget.BuildNormalDrawer": 'Normal Drawer',
+  "About.packinfo.title": 'Package Information',
 };

@@ -21,37 +21,32 @@ class _RatingPageState extends State<RatingPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Toggel"),
-      ),
-      body: Center(
-        child: Column(
-          children: [
-            GFRating(
-              value: _rating,
-              color: GFColors.SUCCESS,
-              borderColor: GFColors.SUCCESS,
-              onChanged: onRateChange,
+    return Center(
+      child: Column(
+        children: [
+          GFRating(
+            value: _rating,
+            color: GFColors.SUCCESS,
+            borderColor: GFColors.SUCCESS,
+            onChanged: onRateChange,
+          ),
+          const Text("With Text"),
+          GFRating(
+            value: _rating,
+            onChanged: (value) {},
+            showTextForm: true,
+            controller: _ratingController,
+            suffixIcon: GFButton(
+              type: GFButtonType.transparent,
+              onPressed: () {
+                setState(() {
+                  _rating = double.parse(_ratingController.text);
+                });
+              },
+              child: const Text('Rate'),
             ),
-            const Text("With Text"),
-            GFRating(
-              value: _rating,
-              onChanged: (value) {},
-              showTextForm: true,
-              controller: _ratingController,
-              suffixIcon: GFButton(
-                type: GFButtonType.transparent,
-                onPressed: () {
-                  setState(() {
-                    _rating = double.parse(_ratingController.text);
-                  });
-                },
-                child: const Text('Rate'),
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

@@ -18,39 +18,34 @@ class _SearchBarPageState extends State<SearchBarPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Toggel"),
-      ),
-      body: Center(
-        child: Column(
-          children: [
-            GFSearchBar(
-              searchList: list,
-              searchQueryBuilder: (query, list) {
-                return list
-                    .where((item) => (item as String)
-                        .toLowerCase()
-                        .contains(query.toLowerCase()))
-                    .toList();
-              },
-              overlaySearchListItemBuilder: (item) {
-                return Container(
-                  padding: const EdgeInsets.all(8),
-                  child: Text(
-                    item as String,
-                    style: const TextStyle(fontSize: 18),
-                  ),
-                );
-              },
-              onItemSelected: (item) {
-                setState(() {
-                  print('$item');
-                });
-              },
-            ),
-          ],
-        ),
+    return Center(
+      child: Column(
+        children: [
+          GFSearchBar(
+            searchList: list,
+            searchQueryBuilder: (query, list) {
+              return list
+                  .where((item) => (item as String)
+                      .toLowerCase()
+                      .contains(query.toLowerCase()))
+                  .toList();
+            },
+            overlaySearchListItemBuilder: (item) {
+              return Container(
+                padding: const EdgeInsets.all(8),
+                child: Text(
+                  item as String,
+                  style: const TextStyle(fontSize: 18),
+                ),
+              );
+            },
+            onItemSelected: (item) {
+              setState(() {
+                print('$item');
+              });
+            },
+          ),
+        ],
       ),
     );
   }

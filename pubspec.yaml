@@ -1,5 +1,5 @@
-name: getwidget_test
-description: A new Flutter project.
+name: flutter_best_practice
+description: A best practice for flutter.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
@@ -13,10 +13,16 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  # beautiful ui and tool
   getwidget: ^3.0.1
+  # router and state management
   get: ^4.6.5
+  # code viewer
   widget_with_codeview: ^2.0.1+2
+  # logger tool
   logger: ^1.1.0
+  # markdown viewer
+  flutter_markdown: ^0.6.10+5
 
 dev_dependencies:
   flutter_test:
@@ -29,7 +35,8 @@ flutter:
   uses-material-design: true
 
   assets:
-    - lib/pages/getwidget/components/
+    - lib/pages/
+    - assets/confs/
     - assets/images/avatar.jpeg
     - assets/images/carousel01.jpeg
     - assets/images/carousel02.jpeg

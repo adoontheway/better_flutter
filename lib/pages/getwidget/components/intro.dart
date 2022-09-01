@@ -21,37 +21,30 @@ class _IntroPageState extends State<IntroPage> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text("Intro Screen"),
-        ),
-        body: GFIntroScreen(
-          color: Colors.blueGrey,
-          slides: slides(),
-          pageController: _pageController,
-          currentIndex: initialPage,
-          pageCount: 5,
-          introScreenBottomNavigationBar: GFIntroScreenBottomNavigationBar(
-            pageController: _pageController,
-            pageCount: slideList.length,
-            currentIndex: initialPage,
-            onForwardButtonTap: () {
-              _pageController.nextPage(
-                  duration: const Duration(milliseconds: 500),
-                  curve: Curves.linear);
-            },
-            onBackButtonTap: () {
-              _pageController.previousPage(
-                  duration: const Duration(milliseconds: 500),
-                  curve: Curves.linear);
-            },
-            navigationBarColor: Colors.white,
-            showDivider: false,
-            inactiveColor: Colors.grey,
-            activeColor: GFColors.SUCCESS,
-          ),
-        ),
+    return GFIntroScreen(
+      color: Colors.blueGrey,
+      slides: slides(),
+      pageController: _pageController,
+      currentIndex: initialPage,
+      pageCount: 5,
+      introScreenBottomNavigationBar: GFIntroScreenBottomNavigationBar(
+        pageController: _pageController,
+        pageCount: slideList.length,
+        currentIndex: initialPage,
+        onForwardButtonTap: () {
+          _pageController.nextPage(
+              duration: const Duration(milliseconds: 500),
+              curve: Curves.linear);
+        },
+        onBackButtonTap: () {
+          _pageController.previousPage(
+              duration: const Duration(milliseconds: 500),
+              curve: Curves.linear);
+        },
+        navigationBarColor: Colors.white,
+        showDivider: false,
+        inactiveColor: Colors.grey,
+        activeColor: GFColors.SUCCESS,
       ),
     );
   }

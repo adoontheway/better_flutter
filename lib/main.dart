@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getwidget_test/common/index.dart';
-import 'package:getwidget_test/routes/app_pages.dart';
-import 'package:getwidget_test/theme/app_theme.dart';
+import 'package:flutter_best_practice/common/index.dart';
+import 'package:flutter_best_practice/routes/app_pages.dart';
+import 'package:flutter_best_practice/theme/app_theme.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

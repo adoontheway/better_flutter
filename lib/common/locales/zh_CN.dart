@@ -89,4 +89,5 @@ const Map<String, String> zh_CN = {
   'GetWidget.Drawer.desc': 'GFDrawer 是抽屉效果，当点击应用左上角的抽屉按钮的时候会从屏幕的左边滑入。 ',
   "GetWidget.BuildDrawerWithHeader": '带头像的Drawer',
   "GetWidget.BuildNormalDrawer": '普通的Drawer',
+  "About.packinfo.title": '三方包信息',
 };
