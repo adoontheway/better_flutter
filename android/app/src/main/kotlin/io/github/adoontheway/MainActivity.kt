@@ -1,4 +1,4 @@
-package com.example.getwidget_test
+package io.github.adoontheway
 
 import io.flutter.embedding.android.FlutterActivity
 
