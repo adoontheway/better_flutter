@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_best_practice/theme/color_schemes.g.dart';
+import 'package:better_flutter/theme/color_schemes.g.dart';
 
 class AppTheme {
   static final ThemeData dark = ThemeData(colorScheme: darkColorScheme);

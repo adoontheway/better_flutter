@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_best_practice/controller/index.dart';
-import 'package:flutter_best_practice/service/index.dart';
+import 'package:better_flutter/controller/index.dart';
+import 'package:better_flutter/service/index.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:flutter_best_practice/common/index.dart';
-import 'package:flutter_best_practice/routes/app_pages.dart';
-import 'package:flutter_best_practice/theme/app_theme.dart';
+import 'package:better_flutter/common/index.dart';
+import 'package:better_flutter/routes/app_pages.dart';
+import 'package:better_flutter/theme/app_theme.dart';
 
 void main() async {
   await init();

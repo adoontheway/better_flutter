@@ -1,9 +1,9 @@
-import 'package:flutter_best_practice/pages/about_page.dart';
-import 'package:flutter_best_practice/utils/index.dart';
+import 'package:better_flutter/pages/about_page.dart';
+import 'package:better_flutter/utils/index.dart';
 import 'package:get/get.dart';
-import 'package:flutter_best_practice/pages/getwidget/getwidget_home.dart';
-import 'package:flutter_best_practice/pages/home_page.dart';
-import 'package:flutter_best_practice/routes/getwidget/getwidget_pages.dart';
+import 'package:better_flutter/pages/getwidget/getwidget_home.dart';
+import 'package:better_flutter/pages/home_page.dart';
+import 'package:better_flutter/routes/getwidget/getwidget_pages.dart';
 
 part 'app_routes.dart';
 part 'getwidget/getwidget_routes.dart';

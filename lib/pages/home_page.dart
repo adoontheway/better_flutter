@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_best_practice/routes/app_pages.dart';
+import 'package:better_flutter/routes/app_pages.dart';
 import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
 

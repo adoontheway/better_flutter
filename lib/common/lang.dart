@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:flutter_best_practice/common/locales/locale.dart';
+import 'package:better_flutter/common/locales/locale.dart';
 
 class LocaleService extends Translations {
   static Locale? get locale => Get.deviceLocale;
