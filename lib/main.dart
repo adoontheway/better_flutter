@@ -1,12 +1,38 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_best_practice/controller/index.dart';
+import 'package:flutter_best_practice/service/index.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:flutter_best_practice/common/index.dart';
 import 'package:flutter_best_practice/routes/app_pages.dart';
 import 'package:flutter_best_practice/theme/app_theme.dart';
 
-void main() {
-  WidgetsFlutterBinding.ensureInitialized();
+void main() async {
+  await init();
   runApp(const MyApp());
+}
+
+Future init() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  await Get.putAsync(() => StorageService().init());
+  Get.put<ConfigStore>(ConfigStore());
+
+  setSystemUi();
+}
+
+void setSystemUi() {
+  if (GetPlatform.isAndroid) {
+    SystemUiOverlayStyle systemUiOverlayStyle = const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.light,
+      statusBarBrightness: Brightness.dark,
+      systemNavigationBarDividerColor: Colors.transparent,
+      systemNavigationBarColor: Colors.white,
+      systemNavigationBarIconBrightness: Brightness.dark,
+    );
+  }
 }
 
 class MyApp extends StatelessWidget {
@@ -14,16 +40,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      enableLog: true,
-      title: 'Flutter Widgets',
-      theme: AppTheme.light,
-      getPages: AppPage.routes,
-      initialRoute: AppPage.INITIAL,
-      locale: LocaleService.locale,
-      fallbackLocale: LocaleService.fallbackLoacale,
-      translations: LocaleService(),
+    return ScreenUtilInit(
+      designSize: const Size(375, 812),
+      builder: (context, child) => GetMaterialApp(
+        debugShowCheckedModeBanner: false,
+        enableLog: true,
+        title: 'Better Flutter',
+        theme: ConfigStore.to.isDarkMode ? AppTheme.dark : AppTheme.light,
+        getPages: AppPage.routes,
+        initialRoute: AppPage.INITIAL,
+        locale: ConfigStore.to.locale, // LocaleService.locale,
+        fallbackLocale: LocaleService.fallbackLoacale,
+        translations: LocaleService(),
+      ),
     );
   }
 }

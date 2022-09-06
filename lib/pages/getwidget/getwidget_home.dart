@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_best_practice/routes/app_pages.dart';
 import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:flutter_best_practice/common/route_setting.dart';
-import 'package:flutter_best_practice/routes/app_pages.dart';
 import 'package:flutter_best_practice/routes/getwidget/getwidget_pages.dart';
 
 class GetWidgetHome extends StatefulWidget {
@@ -42,16 +42,33 @@ class _GetWidgetHomePageState extends State<GetWidgetHome>
   }
 
   Widget _buildTile(RouteSetting setting) {
-    return GFListTile(
-      title: Text(setting.title),
-      description: Text(setting.description),
-      onTap: () => Get.toNamed(setting.routePath),
+    return GFCard(
+      title: GFListTile(
+        titleText: setting.title,
+        onTap: () => Get.toNamed(setting.routePath),
+      ),
+      content: Text(setting.description),
     );
+    // return GFListTile(
+    //   title: Text(setting.title),
+    //   description: Text(setting.description),
+    //   onTap: () => Get.toNamed(setting.routePath),
+    // );
   }
 
   GFAppBar _buildNormalAppbar() {
     return GFAppBar(
       title: Text("GetWidget"),
+      actions: [
+        IconButton(
+            onPressed: () {
+              Get.toNamed(AppRoute.About);
+            },
+            icon: Icon(
+              Icons.info_outline,
+              color: Colors.orange,
+            ))
+      ],
     );
   }
 }

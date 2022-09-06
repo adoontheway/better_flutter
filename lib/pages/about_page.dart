@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_best_practice/controller/index.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
@@ -11,11 +12,11 @@ class AboutPage extends StatefulWidget {
 }
 
 class _AboutPageState extends State<AboutPage> {
-  String? content;
+  String? content = '';
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
+    // _loadPackInfo();
   }
 
   _loadPackInfo() async {
@@ -28,17 +29,36 @@ class _AboutPageState extends State<AboutPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView(
-        children: <Widget>[
-          GFCard(
-            title: GFListTile(
-              titleText: "About.packinfo.title".tr,
+    ConfigStore config = Get.find<ConfigStore>();
+    return SingleChildScrollView(
+      child: content == null
+          ? const GFLoader()
+          : Column(
+              children: <Widget>[
+                GFCard(
+                  title: GFListTile(
+                    title: const Text('Dark Mode'),
+                  ),
+                  content: GFToggle(
+                    onChanged: (val) {
+                      config.switchModel();
+                    },
+                    value: config.isDarkMode,
+                  ),
+                ),
+                // GFCard(
+                //   title: GFListTile(
+                //     title: const Text('Language'),
+                //   ),
+                //   content: GFToggle(
+                //     onChanged: (val) {
+                //       config.switchModel();
+                //     },
+                //     value: config.isDarkMode,
+                //   ),
+                // ),
+              ],
             ),
-            content: content == null ? GFLoader() : Markdown(data: content!),
-          )
-        ],
-      ),
     );
   }
 }

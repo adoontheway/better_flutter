@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:flutter_best_practice/common/route_setting.dart';
-import 'package:flutter_best_practice/routes/app_pages.dart';
 import 'package:flutter_best_practice/routes/getwidget/getwidget_pages.dart';
 
 class GetXHome extends StatefulWidget {
@@ -50,7 +49,7 @@ class _GetXHomePageState extends State<GetXHome> with TickerProviderStateMixin {
 
   GFAppBar _buildNormalAppbar() {
     return GFAppBar(
-      title: Text("GetWidget"),
+      title: const Text("GetWidget"),
     );
   }
 }

@@ -47,6 +47,16 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         print("searchbar submit: $value");
       }),
       title: Text("app_name".tr),
+      actions: [
+        IconButton(
+            onPressed: () {
+              Get.toNamed(AppRoute.About);
+            },
+            icon: Icon(
+              Icons.info_outline,
+              color: Colors.orange,
+            ))
+      ],
     );
   }
 }
