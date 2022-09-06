@@ -26,13 +26,15 @@ dependencies:
   package_info_plus: ^1.4.3+1
   shared_preferences: ^2.0.15
   flutter_screenutil: ^5.5.4
+  # app闪屏
+  flutter_native_splash: ^2.2.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^2.0.0
-
+  # 生成app各尺寸图标
   flutter_launcher_icons: ^0.10.0
 
 flutter:
