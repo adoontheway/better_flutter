@@ -37,7 +37,7 @@ class _AboutPageState extends State<AboutPage> {
               children: <Widget>[
                 GFCard(
                   title: GFListTile(
-                    title: const Text('Dark Mode'),
+                    title: Text('About.DarkMode.title'.tr),
                   ),
                   content: GFToggle(
                     onChanged: (val) {
@@ -46,17 +46,32 @@ class _AboutPageState extends State<AboutPage> {
                     value: config.isDarkMode,
                   ),
                 ),
-                // GFCard(
-                //   title: GFListTile(
-                //     title: const Text('Language'),
-                //   ),
-                //   content: GFToggle(
-                //     onChanged: (val) {
-                //       config.switchModel();
-                //     },
-                //     value: config.isDarkMode,
-                //   ),
-                // ),
+                GFCard(
+                  title: GFListTile(
+                    title: Text('About.Language.title'.tr),
+                  ),
+                  content: DropdownButtonHideUnderline(
+                    child: GFDropdown(
+                      padding: const EdgeInsets.all(10),
+                      borderRadius: BorderRadius.circular(5),
+                      border: const BorderSide(color: Colors.black12, width: 1),
+                      dropdownButtonColor: Colors.white,
+                      value: config.locale,
+                      onChanged: (newValue) {
+                        print('${(newValue as Locale).toLanguageTag()}');
+                        setState(() {
+                          config.onLocaleUpdate(newValue as Locale);
+                        });
+                      },
+                      items: config.languages
+                          .map((item) => DropdownMenuItem(
+                                child: Text('Label.${item.toLanguageTag()}'.tr),
+                                value: item,
+                              ))
+                          .toList(),
+                    ),
+                  ),
+                ),
               ],
             ),
     );

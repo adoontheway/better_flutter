@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
 
 class DropdownPage extends StatefulWidget {
@@ -39,10 +40,10 @@ class _DropdownPageState extends State<DropdownPage> {
                   });
                 },
                 items: [
-                  'FC Barcelona',
-                  'Real Madrid',
-                  'Villareal',
-                  'Manchester City'
+                  'Dropdow.Item0'.tr,
+                  'Dropdow.Item1'.tr,
+                  'Dropdow.Item2'.tr,
+                  'Dropdow.Item3'.tr
                 ]
                     .map((value) => DropdownMenuItem(
                           value: value,
@@ -69,10 +70,10 @@ class _DropdownPageState extends State<DropdownPage> {
                   });
                 },
                 items: [
-                  'FC Barcelona',
-                  'Real Madrid',
-                  'Villareal',
-                  'Manchester City'
+                  'Dropdow.Item0'.tr,
+                  'Dropdow.Item1'.tr,
+                  'Dropdow.Item2'.tr,
+                  'Dropdow.Item3'.tr
                 ]
                     .map((value) => DropdownMenuItem(
                           value: value,

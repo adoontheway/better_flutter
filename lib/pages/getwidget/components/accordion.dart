@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
 
 class AccordionPage extends StatelessWidget {
@@ -10,25 +11,22 @@ class AccordionPage extends StatelessWidget {
       child: Column(
         children: [
           GFAccordion(
-            title: 'GF Accordion',
-            content:
-                'GetFlutter is an open source library that comes with pre-build 1000+ UI components.',
+            title: 'Accordion.title1'.tr,
+            content: 'GetFlutter.desc1'.tr,
           ),
           GFAccordion(
-            title: 'GF Accordion with Icon',
-            content:
-                'GetFlutter is an open source library that comes with pre-build 1000+ UI components.',
+            title: 'Accordion.title2'.tr,
+            content: 'GetFlutter.desc1'.tr,
             collapsedIcon: Icon(Icons.add),
             expandedIcon: Icon(Icons.minimize),
           ),
           GFAccordion(
-              title: 'GF Accordion with trailing Text',
-              content:
-                  'GetFlutter is an open source library that comes with pre-build 1000+ UI components.',
+              title: 'Accordion.title3'.tr,
+              content: 'GetFlutter.desc1'.tr,
               collapsedIcon: Text('Show'),
               expandedIcon: Text('Hide')),
           GFAccordion(
-              title: 'GF Accordion contentChild',
+              title: 'Accordion.title4'.tr,
               contentChild: Image.asset('assets/images/carousel01.jpg'),
               collapsedIcon: Text('Show'),
               expandedIcon: Text('Hide')),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
 
 class AlertPage extends StatefulWidget {
@@ -16,8 +17,7 @@ class _AlertPageState extends State<AlertPage> {
       child: GFFloatingWidget(
         child: GFAlert(
           title: 'GFAlert Type',
-          content:
-              'Get Flutter is one of the largest Flutter open-source UI library for mobile or web apps with  1000+ pre-built reusable widgets.',
+          content: 'GetFlutter.desc2'.tr,
           type: GFAlertType.rounded,
           bottombar: Row(
             mainAxisAlignment: MainAxisAlignment.end,
@@ -29,7 +29,8 @@ class _AlertPageState extends State<AlertPage> {
                   });
                 },
                 shape: GFButtonShape.pills,
-                child: Text('Skip', style: TextStyle(color: Colors.black)),
+                child: Text('Label.Skip'.tr,
+                    style: TextStyle(color: Colors.black)),
               ),
               SizedBox(width: 5),
               GFButton(
@@ -44,7 +45,7 @@ class _AlertPageState extends State<AlertPage> {
                   color: GFColors.ALT,
                 ),
                 position: GFPosition.end,
-                text: 'Learn More',
+                text: 'Label.LearnMore'.tr,
               )
             ],
           ),
@@ -55,9 +56,8 @@ class _AlertPageState extends State<AlertPage> {
 
   Widget _buildWithMultiButtons() {
     return GFAlert(
-      title: 'Welcome !',
-      content:
-          'Get Flutter is one of the largest Flutter open-source UI library for mobile or web apps with  1000+ pre-built reusable widgets.',
+      title: 'Title.Welcome'.tr,
+      content: 'GetFlutter.desc2'.tr,
       bottombar: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
@@ -68,7 +68,7 @@ class _AlertPageState extends State<AlertPage> {
               });
             },
             shape: GFButtonShape.pills,
-            child: Text('Skip', style: TextStyle(color: Colors.black)),
+            child: Text('Label.Skip'.tr, style: TextStyle(color: Colors.black)),
           ),
           const SizedBox(width: 5),
           GFButton(
@@ -83,7 +83,7 @@ class _AlertPageState extends State<AlertPage> {
               color: GFColors.ALT,
             ),
             position: GFPosition.end,
-            text: 'Learn More',
+            text: 'Label.LearnMore'.tr,
           ),
         ],
       ),
@@ -94,9 +94,8 @@ class _AlertPageState extends State<AlertPage> {
     return GFAlert(
       alignment: Alignment.center,
       backgroundColor: Colors.white,
-      title: 'Welcome!',
-      content:
-          'Get Flutter is one of the largest Flutter open-source UI library for mobile or web apps with  1000+ pre-built reusable widgets.',
+      title: 'Title.Welcome'.tr,
+      content: 'GetFlutter.desc2'.tr,
       type: GFAlertType.rounded,
       bottombar: Row(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -109,8 +108,8 @@ class _AlertPageState extends State<AlertPage> {
               });
             },
             color: GFColors.LIGHT,
-            child: const Text(
-              'Close',
+            child: Text(
+              'Label.Close'.tr,
               style: TextStyle(color: Colors.black),
             ),
           ),

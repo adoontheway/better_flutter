@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
 
 class AnimationPage extends StatefulWidget {
@@ -129,7 +130,7 @@ class _AnimationPageState extends State<AnimationPage>
           ),
           GFShimmer(
             child: Text(
-              "Touch Image to Start Animation",
+              'Label.Animation.Remind'.tr,
               style: TextStyle(fontSize: 40),
             ),
           ),

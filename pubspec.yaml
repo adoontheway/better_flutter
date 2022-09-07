@@ -42,9 +42,10 @@ flutter:
   assets:
     - lib/pages/getwidget/components/
     - assets/images/avatar.jpeg
-    - assets/images/carousel01.jpeg
-    - assets/images/carousel02.jpeg
-    - assets/images/carousel03.jpeg
+    - assets/images/carousel01.jpg
+    - assets/images/carousel02.jpg
+    - assets/images/carousel03.jpg
+    - assets/images/carousel04.jpg
     
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
