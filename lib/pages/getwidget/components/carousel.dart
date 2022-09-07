@@ -9,9 +9,10 @@ class CarouselPage extends StatefulWidget {
 
 class _CarouselPageState extends State<CarouselPage> {
   final List<String> localAssets = [
-    "assets/images/carousel01.jpeg",
-    "assets/images/carousel02.jpeg",
-    "assets/images/carousel03.jpeg",
+    "assets/images/carousel01.jpg",
+    "assets/images/carousel02.jpg",
+    "assets/images/carousel03.jpg",
+    "assets/images/carousel04.jpg",
   ];
   @override
   Widget build(BuildContext context) {

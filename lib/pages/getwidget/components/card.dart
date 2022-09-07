@@ -37,7 +37,7 @@ class CardPage extends StatelessWidget {
             boxFit: BoxFit.cover,
             titlePosition: GFPosition.start,
             image: Image.asset(
-              'assets/images/carousel01.jpeg',
+              'assets/images/carousel01.jpg',
               height: MediaQuery.of(context).size.height * 0.2,
               width: MediaQuery.of(context).size.width,
               fit: BoxFit.cover,

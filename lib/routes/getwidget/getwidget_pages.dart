@@ -11,7 +11,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         ButtonsPage(),
         'lib/pages/getwidget/components/buttons.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -20,7 +20,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         BadgePage(),
         'lib/pages/getwidget/components/badge.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -29,7 +29,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
           AvatarPage(),
           'lib/pages/getwidget/components/avatar.dart',
-          'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+          'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
           ''),
     ),
     GetPage(
@@ -37,7 +37,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         ImagePage(),
         'lib/pages/getwidget/components/image.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -46,7 +46,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         CardPage(),
         'lib/pages/getwidget/components/card.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -55,7 +55,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         CarouselPage(),
         'lib/pages/getwidget/components/carousel.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -64,7 +64,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         TilePage(),
         'lib/pages/getwidget/components/tile.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -73,7 +73,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         TabPage(),
         'lib/pages/getwidget/components/tab.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -82,7 +82,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         FloatingWidgetPage(),
         'lib/pages/getwidget/components/floating_widget.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -91,7 +91,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         ToastPage(),
         'lib/pages/getwidget/components/toast.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -100,7 +100,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         TogglePage(),
         'lib/pages/getwidget/components/toggle.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -109,7 +109,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         TypographyPage(),
         'lib/pages/getwidget/components/typography.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -118,7 +118,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         AccordionPage(),
         'lib/pages/getwidget/components/accordion.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -127,7 +127,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         AlertPage(),
         'lib/pages/getwidget/components/alert.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -136,7 +136,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         SearchBarPage(),
         'lib/pages/getwidget/components/searhbar.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -145,7 +145,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         RatingPage(),
         'lib/pages/getwidget/components/rating.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -154,7 +154,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         DropdownPage(),
         'lib/pages/getwidget/components/dropdown.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -163,7 +163,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         LoaderPage(),
         'lib/pages/getwidget/components/loader.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -172,7 +172,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         ProgressBarPage(),
         'lib/pages/getwidget/components/progressbar.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -181,7 +181,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         ShimmerPage(),
         'lib/pages/getwidget/components/shimmer.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -190,7 +190,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         AnimationPage(),
         'lib/pages/getwidget/components/animation.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -199,7 +199,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         BorderPage(),
         'lib/pages/getwidget/components/border.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -208,7 +208,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         BottomSheetPage(),
         'lib/pages/getwidget/components/bottomsheet.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -217,7 +217,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         CheckboxPage(),
         'lib/pages/getwidget/components/checkbox.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -226,7 +226,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         CheckboxListTilePage(),
         'lib/pages/getwidget/components/checkboxlisttile.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -235,7 +235,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         MultiSelectPage(),
         'lib/pages/getwidget/components/multiselect.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -244,7 +244,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         IntroPage(),
         'lib/pages/getwidget/components/intro.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -253,7 +253,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         RadioPage(),
         'lib/pages/getwidget/components/radio.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -262,7 +262,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         RadioListTilePage(),
         'lib/pages/getwidget/components/radiolisttile.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -271,7 +271,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         SticktHeaderPage(),
         'lib/pages/getwidget/components/stickyheader.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -280,7 +280,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         TextfieldPage(),
         'lib/pages/getwidget/components/textfield.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -289,7 +289,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         FormPage(),
         'lib/pages/getwidget/components/form.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -298,7 +298,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         DrawerPage(),
         'lib/pages/getwidget/components/drawer.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),
@@ -307,7 +307,7 @@ class GetWidgetPages {
       page: GenerateGetPage(
         AppbarPage(),
         'lib/pages/getwidget/components/appbar.dart',
-        'https://gitee.com/adoontheway/getwidget_samples/blob/master/',
+        'https://github.com/adoontheway/better_flutter/blob/master/lib/pages/getwidget/components/',
         'GetWidget',
       ),
     ),

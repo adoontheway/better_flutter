@@ -22,7 +22,7 @@ class LoaderPage extends StatelessWidget {
           GFLoader(
             type: GFLoaderType.custom,
             child: Image.asset(
-              'assets/images/carousel01.jpeg',
+              'assets/images/carousel01.jpg',
               width: 200,
               height: 200,
             ),

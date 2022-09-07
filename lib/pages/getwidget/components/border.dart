@@ -16,7 +16,7 @@ class BorderPage extends StatelessWidget {
               dashedLine: [2, 0],
               type: GFBorderType.rect,
               child: Image.asset(
-                'assets/images/carousel02.jpeg',
+                'assets/images/carousel02.jpg',
                 width: MediaQuery.of(context).size.width,
                 fit: BoxFit.fitWidth,
               ),
@@ -31,7 +31,7 @@ class BorderPage extends StatelessWidget {
               // type: GFBorderType.circle,
               color: Color(0xFF19CA4B),
               child: Image.asset(
-                'assets/images/carousel03.jpeg',
+                'assets/images/carousel03.jpg',
                 width: MediaQuery.of(context).size.width,
                 fit: BoxFit.fitWidth,
               ),
@@ -45,7 +45,7 @@ class BorderPage extends StatelessWidget {
               dashedLine: [2, 1],
               type: GFBorderType.rRect,
               child: Image.asset(
-                'assets/images/carousel01.jpeg',
+                'assets/images/carousel01.jpg',
                 width: MediaQuery.of(context).size.width,
                 fit: BoxFit.fitWidth,
               ),

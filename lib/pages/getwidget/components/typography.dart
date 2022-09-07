@@ -18,7 +18,7 @@ class TypographyPage extends StatelessWidget {
             text: 'GF Header Typo1',
             type: GFTypographyType.typo1,
             icon: Icon(Icons.send),
-            backgroundImage: AssetImage('assets/images/carousel01.jpeg'),
+            backgroundImage: AssetImage('assets/images/carousel01.jpg'),
           ),
         ],
       ),

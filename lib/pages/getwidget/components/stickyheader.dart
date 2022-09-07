@@ -9,9 +9,9 @@ class SticktHeaderPage extends StatefulWidget {
 
 class _SticktHeaderPageState extends State<SticktHeaderPage> {
   List imageList = [
-    'assets/images/carousel01.jpeg',
-    'assets/images/carousel02.jpeg',
-    'assets/images/carousel03.jpeg',
+    'assets/images/carousel01.jpg',
+    'assets/images/carousel02.jpg',
+    'assets/images/carousel03.jpg',
   ];
   bool check = false;
   @override
@@ -50,7 +50,7 @@ class _SticktHeaderPageState extends State<SticktHeaderPage> {
                         subTitleText: 'Hello',
                         avatar: GFAvatar(
                           backgroundImage:
-                              AssetImage('assets/images/carousel01.jpeg'),
+                              AssetImage('assets/images/carousel01.jpg'),
                         ),
                         size: 25,
                         activeBgColor: Colors.green,

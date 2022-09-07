@@ -104,7 +104,7 @@ class _AnimationPageState extends State<AnimationPage>
             type: GFAnimationType.size,
             controller: controller1,
             child: Image.asset(
-              'assets/images/carousel01.jpeg',
+              'assets/images/carousel01.jpg',
               width: 80,
               height: 80,
             ),
@@ -119,7 +119,7 @@ class _AnimationPageState extends State<AnimationPage>
             fontSize: _fontSize,
             type: GFAnimationType.container,
             child: Image.asset(
-              'assets/images/carousel01.jpeg',
+              'assets/images/carousel02.jpg',
               width: 80,
               height: 80,
             ),

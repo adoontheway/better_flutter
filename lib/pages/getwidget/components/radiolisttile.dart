@@ -19,7 +19,7 @@ class _RadioListTilePageState extends State<RadioListTilePage> {
             titleText: 'Arthur Shelby',
             subTitleText: 'By order of the peaky blinders',
             avatar: GFAvatar(
-              backgroundImage: AssetImage('assets/images/carousel01.jpeg'),
+              backgroundImage: AssetImage('assets/images/carousel01.jpg'),
             ),
             size: 25,
             activeBorderColor: Colors.green,

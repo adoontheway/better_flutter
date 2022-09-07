@@ -55,7 +55,7 @@ class _DrawerPageState extends State<DrawerPage> {
             ),
             otherAccountsPictures: <Widget>[
               Image(
-                image: AssetImage("assets/images/carousel01.jpeg"),
+                image: AssetImage("assets/images/carousel01.jpg"),
                 //  NetworkImage(
                 //     "https://cdn.pixabay.com/photo/2019/12/20/00/03/road-4707345_960_720.jpg"),
                 fit: BoxFit.cover,

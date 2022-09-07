@@ -71,7 +71,7 @@ class _IntroPageState extends State<IntroPage> {
             ],
           ),
           color: Colors.orange,
-          image: const AssetImage('assets/images/carousel01.jpeg'),
+          image: const AssetImage('assets/images/carousel01.jpg'),
           boxFit: BoxFit.cover,
           colorFilter:
               ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken),
@@ -84,7 +84,7 @@ class _IntroPageState extends State<IntroPage> {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(0),
             image: DecorationImage(
-              image: AssetImage('assets/images/carousel02.jpeg'),
+              image: AssetImage('assets/images/carousel02.jpg'),
               fit: BoxFit.cover,
               colorFilter: ColorFilter.mode(
                   Colors.black.withOpacity(0.2), BlendMode.darken),
@@ -96,7 +96,7 @@ class _IntroPageState extends State<IntroPage> {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(0),
             image: DecorationImage(
-              image: AssetImage('assets/images/carousel03.jpeg'),
+              image: AssetImage('assets/images/carousel03.jpg'),
               fit: BoxFit.cover,
               colorFilter: ColorFilter.mode(
                   Colors.black.withOpacity(0.2), BlendMode.darken),
@@ -108,7 +108,7 @@ class _IntroPageState extends State<IntroPage> {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(0),
             image: DecorationImage(
-              image: AssetImage('assets/images/avatar.jpeg'),
+              image: AssetImage('assets/images/carousel04.jpg'),
               fit: BoxFit.cover,
               colorFilter: ColorFilter.mode(
                   Colors.black.withOpacity(0.2), BlendMode.darken),

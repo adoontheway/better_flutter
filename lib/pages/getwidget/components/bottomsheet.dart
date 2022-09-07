@@ -46,7 +46,7 @@ class BottomSheetPage extends StatelessWidget {
             boxShadow: [BoxShadow(color: Colors.black45, blurRadius: 0)]),
         child: const GFListTile(
           avatar: GFAvatar(
-            backgroundImage: AssetImage('assets/images/carousel01.jpeg'),
+            backgroundImage: AssetImage('assets/images/carousel01.jpg'),
           ),
           titleText: 'GetBottomSheet',
           subTitleText: 'Open source UI library',
@@ -125,7 +125,7 @@ class BottomSheetPage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(50),
                           image: DecorationImage(
                               image:
-                                  AssetImage('assets/images/carousel01.jpeg'))),
+                                  AssetImage('assets/images/carousel01.jpg'))),
                     ),
                     Container(
                         margin: EdgeInsets.only(left: 6),
@@ -147,7 +147,7 @@ class BottomSheetPage extends StatelessWidget {
                       child: GFListTile(
                         avatar: GFAvatar(
                           backgroundImage:
-                              AssetImage('assets/images/carousel02.jpeg'),
+                              AssetImage('assets/images/carousel02.jpg'),
                           size: 20,
                         ),
                         // subtitleText: 'John Mendez',

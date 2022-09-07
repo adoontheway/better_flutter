@@ -29,7 +29,7 @@ class AccordionPage extends StatelessWidget {
               expandedIcon: Text('Hide')),
           GFAccordion(
               title: 'GF Accordion contentChild',
-              contentChild: Image.asset('assets/images/carousel01.jpeg'),
+              contentChild: Image.asset('assets/images/carousel01.jpg'),
               collapsedIcon: Text('Show'),
               expandedIcon: Text('Hide')),
         ],
