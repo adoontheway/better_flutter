@@ -21,6 +21,10 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
+def keyProperties = new Properties()
+def keyPropertiesFile = rootProject.file('key.properties')
+keyProperties.load(new FileInputStream(keyPropertiesFile))
+
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
@@ -54,12 +58,37 @@ android {
         versionName flutterVersionName
     }
 
+    signingConfigs{
+        release {
+             keyAlias keyProperties['keyAlias']
+             keyPassword keyProperties['keyPassword']
+             storeFile file(keyProperties['storeFile'])
+             storePassword keyProperties['storePassword']
+        }
+    }
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig signingConfigs.debug
+//            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
+            // 混淆
+           minifyEnabled true
+//            useProguard true
+            //Zipalign
+            zipAlignEnabled true
+            // 移除无用的 resource 文件
+//            shrinkResources true
+
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            ndk {
+                // 设置支持平台
+               abiFilters "arm64-v8a" //"armeabi-v7a"
+            }
         }
+        
     }
 }
 
